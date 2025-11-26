@@ -52,7 +52,5 @@ function countDigitsInString(str) {
   console.log(count);
 }
 
-//46
-
 
 
