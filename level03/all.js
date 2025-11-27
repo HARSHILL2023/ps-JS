@@ -57,7 +57,7 @@ function reversenumber(num) {
         n = Math.abs(n);
     }
     n = Number(String(n).split("").reverse().join("")) * check;
-    console.log(n);  
+    console.log(n);
 
 
 }
@@ -134,4 +134,26 @@ function fibonacci(num) {
 };
 
 //29
+function gCD(num1, num2) {
+    var num = Math.min(num1, num2)
+    for (var i = num; i >= 1; i++) {
+        if (num1 % i == 0 && num2 % i == 0) {
+            console.log(i);
+            break;
+        }
+    }
+}
 
+//30
+
+function lcm(f,s){
+
+let max = Math.max(f, s);
+
+for (let i = max; i <= f * s; i++) {
+    if (i % f == 0 && i % s == 0) {
+        console.log(i);
+        return;
+    }
+}
+}

@@ -60,7 +60,11 @@ function removeVowels(string){
   
 
 }
+
+//49
+
 function removeNumber(string){
   var neww=string.replace(/[1234567890]/g,"");
   console.log(neww);  
 }
+
