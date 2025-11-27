@@ -102,3 +102,10 @@ function CountA(string){
     }
     console.log(count);
 }
+
+//40
+ 
+function removeSpaces(string) {
+  let temp = string.split(" ").join("");
+  console.log(temp);
+}
