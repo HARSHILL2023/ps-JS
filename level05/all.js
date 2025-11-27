@@ -55,9 +55,12 @@ function countDigitsInString(str) {
 
 //48
 function removeVowels(string){
-  let temp=string.split("");
-  var neww =temp.replace('a,e,i,o,u',"");
+  var neww =string.replace(/[aeiouAEIOU]/g,"");
   console.log(neww);
   
 
+}
+function removeNumber(string){
+  var neww=string.replace(/[1234567890]/g,"");
+  console.log(neww);  
 }
