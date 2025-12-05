@@ -162,3 +162,16 @@ function removeSpaces(string) {
   let temp = string.split(" ").join("");
   console.log(temp);
 }
+
+//another approach
+
+function removeSpace(string){
+    let res='';
+    for(let i=0;i<string.length;i++){
+        if(string[i]==" "){
+            continue;
+        }
+        res+=string[i];
+    }
+    console.log(res);
+}
