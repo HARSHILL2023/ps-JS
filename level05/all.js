@@ -83,11 +83,35 @@ function countLowercase(str){
 
 
 
-//
+//48
 function removeVowels(string){
   var neww =string.replace(/[aeiouAEIOU]/g,"");
   console.log(neww);
 }
+// function removeVowels(str) {
+//     const vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
+//     let result = '';
+    
+//     for (let i = 0; i < str.length; i++) {
+//         let char = str[i];
+//         let ascii = char.charCodeAt(0);
+        
+//         if (ascii >= 65 && ascii <= 90) {
+//             if (ascii !== 65 && ascii !== 69 && ascii !== 73 && ascii !== 79 && ascii !== 85) {
+//                 result += char;
+//             }
+//         } else if (ascii >= 97 && ascii <= 122) { 
+//             if (ascii !== 97 && ascii !== 101 && ascii !== 105 && ascii !== 111 && ascii !== 117) {
+//                 result += char;
+//             }
+//         } else {
+//             result += char; 
+//         }
+//     }
+//     return result;
+// }
+// console.log(removeVowels("Hello World")); 
+
 
 //49
 
