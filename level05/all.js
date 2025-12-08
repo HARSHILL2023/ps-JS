@@ -32,7 +32,7 @@ function check(string, char) {
 function checkString(string1,string2){
 
     if(string1===string2){
-      console.log("yes it's the same");''
+      console.log("yes it's the same");
     }
     else{
       console.log("not it's not the same");
@@ -52,13 +52,41 @@ function countDigitsInString(str) {
   console.log(count);
 }
 
+//46 
 
-//48
+function countUppercase(str){
+  let count=0;
+  for(i=0;i<str.length;i++){
+    let temp=str.charCodeAt(i);
+    if(temp>=65 && temp<=90){
+      count++;
+    }
+  }
+  console.log(count);
+
+}
+
+//47
+
+function countLowercase(str){
+  let count=0;
+  for(i=0;i<str.length;i++){
+    let temp=str.charCodeAt(i);
+    if(temp>=97 && temp<=122){
+      count++;
+    }
+  }
+  console.log(count);
+
+}
+
+
+
+
+//
 function removeVowels(string){
   var neww =string.replace(/[aeiouAEIOU]/g,"");
   console.log(neww);
-  
-
 }
 
 //49
@@ -68,3 +96,22 @@ function removeNumber(string){
   console.log(neww);  
 }
 
+//50
+
+function changeType(str) {
+  let result = '';
+  for (let i = 0; i < str.length; i++) {   
+    let temp = str.charCodeAt(i);         
+    if (temp >= 97 && temp <= 122) {
+      
+      result += String.fromCharCode(temp - 32);  
+    } else if (temp >= 65 && temp <= 90) {
+     
+      result += String.fromCharCode(temp + 32);
+    } else {
+   
+      result += str[i];
+    }
+  }
+  console.log(result);
+}
