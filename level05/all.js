@@ -139,3 +139,5 @@ function changeType(str) {
   }
   console.log(result);
 }
+
+//another method

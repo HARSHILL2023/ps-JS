@@ -14,7 +14,7 @@ function allElemnet(arry){
 function sumOfArray(arry) {
   let result = 0;
   for (let i = 0; i < arry.length; i++) {
-    result += arry[i]+" ";
+    result += arry[i];
   }
   console.log(result);
 }
