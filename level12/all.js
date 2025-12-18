@@ -79,6 +79,20 @@ function divisibleby2and5(num){
 console.log(count);
 }
 
+//130
+function coprime(n1,n2){
+  let range=Math.min(n1,n2);
+  let GCD;
+  for(let i=range;i>=1;i--){
+    if(n1%i==0 &&  n2%i==0){
+      GCD=i;
+      break;
+    }
+  }
+  console.log(GCD);
+}
+coprime(8,15);
+
 //131
 
 function largestNumber(n) {
