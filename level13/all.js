@@ -163,4 +163,43 @@ function repeattwice(str){
 
 //157
 
+function removeSpecialCharacters(str) {
+    let result = "";
+    for (let i = 0; i < str.length; i++) {
+        let char = str[i];
+        if ((char >= 'a' && char <= 'z') || 
+            (char >= 'A' && char <= 'Z') || 
+            (char >= '0' && char <= '9')) {
+            result += char;
+        }
+    }
+    console.log(result);
+    
+}
+
+//158
+
+function countwithlewnghtbiggertjan5(str){
+    let count=0;
+    let temp=str.split(" ");
+    for(let i=0;i<temp.length;i++){
+        if(temp[i].length>=5){
+            count++;
+        }
+    }
+    console.log(count);
+    
+
+}
+
+//159
+
+function anagram(str1,str2){
+    let check1=str1;
+    let check2=str2;
+    let reverse=str2.split('').reverse().join('');
+     
+    return reverse==str1
+
+}
 
