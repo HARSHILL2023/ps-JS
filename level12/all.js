@@ -208,11 +208,15 @@ function sumofcubes(n){
  }
 
  //140
+function automorphic(n){
+let length=String(n).length;
 
- function automorphic(num){
-  let original=num;
-  let check=0;
-  check=(num*num)%10;
-  
-  return check==original;
- }
+square=n*n;
+if(square%10 ** length == n){
+console.log(true);
+}
+else{
+console.log(false)
+
+}
+}
