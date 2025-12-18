@@ -158,7 +158,7 @@ function difference(a,b){
 function between100and999(n){
     return n>=100||n<=999
 }
-console.log(between100and999(123))
+
 
 //137
 
@@ -181,3 +181,27 @@ function sumofcubes(n){
 }
 
 //139
+ function harshad(num){
+  let original=num;
+  let sum=0;
+    while(num>0){
+      sum=sum+(num%10);
+      num=Math.floor(num/10);
+    }
+   
+    return original%sum==0
+    
+ }
+
+ //140
+
+ function automorphic(num){
+  let original=num;
+  let check=0;
+  check=(num*num)%10;
+  
+  return check==original;
+ }
+
+console.log(automorphic(7));
+
