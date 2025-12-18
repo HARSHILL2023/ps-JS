@@ -202,6 +202,3 @@ function sumofcubes(n){
   
   return check==original;
  }
-
-console.log(automorphic(7));
-
