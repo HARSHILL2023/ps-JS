@@ -57,5 +57,67 @@ function triplet(arr, y) {
 
 //196
 
+//197
 
+function firstNonRepeatingChar(str) {
 
+    for(let i = 0; i < str.length; i++) {
+        let char = str[i];
+        let count = 0;
+        for(let j = 0; j < str.length; j++) {
+            if(str[j] === char) {
+                count++;
+            }
+        }
+        if(count === 1) {
+            return char;
+        }
+    }
+    return null;
+}
+
+//198
+
+function firstRepeatingChar(str) {
+
+    for(let i = 0; i < str.length; i++) {
+        let char = str[i];
+        let count = 0;
+        for(let j = 0; j < str.length; j++) {
+            if(str[j] === char) {
+                count++;
+            }
+        }
+        if(count !== 1) {
+            return char;
+        }
+    }
+    return null;
+}
+
+//199
+function RemoveConsecutive(str) {
+    let neww = '';
+    let lastChar = '';  
+    for (let char of str) {
+        if (char !== lastChar) {
+            neww += char;
+            lastChar = char;  
+        }
+    }
+    console.log(neww);
+}
+
+//200
+function RemoveConsecutivearraY(arry) {
+    let neww = [];
+    let lastChar ;  
+    for (let char of arry) {
+        if (char !== lastChar) {
+            neww.push(char)
+            lastChar = char;  
+        }
+    }
+    console.log(neww);
+}
+RemoveConsecutivearraY([1,1,2,1,1,3,5,8,2])
