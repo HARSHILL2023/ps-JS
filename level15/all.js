@@ -10,3 +10,10 @@ function sumofodd(arry){
     console.log(sum);
 }
 
+//182
+
+function swapElements(arr, i, j) {
+    let temp = arr[i];
+    arr[i] = arr[j];
+    arr[j] = temp;
+}
