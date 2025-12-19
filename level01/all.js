@@ -1,10 +1,10 @@
 //  Q1 Check Even Odd
 
-function evenOddCheck(n1){
-    if(n1%2==0){
-        console.log(n1,"is Even");
-    } else{
-        console.log(n1 , "is Odd");
+function evenOddCheck(n1) {
+    if (n1 % 2 == 0) {
+        console.log(n1, "is Even");
+    } else {
+        console.log(n1, "is Odd");
     }
 }
 // evenOddCheck(33);
@@ -12,11 +12,11 @@ function evenOddCheck(n1){
 
 // Q2 Check maximum 
 
-function maximum(n2,n3){
-    if(n2>n3){
-        console.log(n2 , "is Big");
-    } else{
-        console.log(n3 , "is Big");
+function maximum(n2, n3) {
+    if (n2 > n3) {
+        console.log(n2, "is Big");
+    } else {
+        console.log(n3, "is Big");
     }
 }
 // maximum(223,33);
@@ -24,13 +24,13 @@ function maximum(n2,n3){
 
 // Q3 maximum Of Three
 
-function maximumOfThree(n1,n2,n3){
-    if(n1>n2 && n1>n3){
-        console.log(n1 , "is Big");
-    } else if(n2>n3 && n2>n1){
-         console.log(n2 , "is Big");
-    } else{
-         console.log(n3 , "is Big");
+function maximumOfThree(n1, n2, n3) {
+    if (n1 > n2 && n1 > n3) {
+        console.log(n1, "is Big");
+    } else if (n2 > n3 && n2 > n1) {
+        console.log(n2, "is Big");
+    } else {
+        console.log(n3, "is Big");
     }
 }
 
@@ -41,13 +41,13 @@ function maximumOfThree(n1,n2,n3){
 // Q4 positive negitive and zero
 
 
-function ponezo(num){
-    if(num>0){
-        console.log(num , "is Pos+");
-    } else if(num==0){
-         console.log(num , "is Zero");
-    } else{
-         console.log(num , "is Neg-");
+function ponezo(num) {
+    if (num > 0) {
+        console.log(num, "is Pos+");
+    } else if (num == 0) {
+        console.log(num, "is Zero");
+    } else {
+        console.log(num, "is Neg-");
     }
 }
 // ponezo(33);
@@ -55,13 +55,13 @@ function ponezo(num){
 
 // Q5 Age Group
 
-function ageGroup(age){
-    if(age<=12 && age>0){
-        console.log(age , "is Consider as Child");
-    } else if(age>12 && age<19){
-        console.log(age , "is Consider as Teen");
-    } else{
-        console.log(age , "is Consider as Adult");
+function ageGroup(age) {
+    if (age <= 12 && age > 0) {
+        console.log(age, "is Consider as Child");
+    } else if (age > 12 && age < 19) {
+        console.log(age, "is Consider as Teen");
+    } else {
+        console.log(age, "is Consider as Adult");
     }
 }
 // ageGroup(18);
@@ -69,16 +69,16 @@ function ageGroup(age){
 
 //  Q6 Grade Calculator
 
-function gradeCal(grade){
-    if(grade>=90 && grade<101){
-        console.log(grade , "-> Grade A");
-    } else if(grade>80 && grade<90){
-        console.log(grade , "-> Grade B");
-    } else if(grade>70 && grade<80){
-        console.log(grade , "-> Grade C");
-    } else if(grade>60 && grade<70){
-        console.log(grade , "-> Grade D");
-    } else{
+function gradeCal(grade) {
+    if (grade >= 90 && grade < 101) {
+        console.log(grade, "-> Grade A");
+    } else if (grade > 80 && grade < 90) {
+        console.log(grade, "-> Grade B");
+    } else if (grade > 70 && grade < 80) {
+        console.log(grade, "-> Grade C");
+    } else if (grade > 60 && grade < 70) {
+        console.log(grade, "-> Grade D");
+    } else {
         console.log("Fail");
     }
 }
@@ -91,16 +91,16 @@ function gradeCal(grade){
 //     swich(ggrade){
 //         case(ggrade>=90 && ggrade<101):
 //         console.log(ggrade , "-> Grade A");
-       
+
 //         case(ggrade>80 && ggrade<90):
 //         console.log(ggrade , "-> Grade B");   
-        
+
 //         case(ggrade>70 && ggrade<80):
 //         console.log(ggrade , "-> Grade C");
-        
+
 //         case(ggrade>60 && ggrade<70):
 //         console.log(ggrade , "-> Grade D");
-         
+
 //         case(ggrade<60):
 //         console.log(ggrade ,"-> is Fail");
 //     }
@@ -135,11 +135,11 @@ gradeCalculator2(90);
 
 //  Q7 Divisible by 5
 
-function divisibleByFive(num){
-    if(num%5==0){
-        console.log(num , "is Divisible By 5");
-    } else{
-        console.log(num , "is not Divisible By 5");
+function divisibleByFive(num) {
+    if (num % 5 == 0) {
+        console.log(num, "is Divisible By 5");
+    } else {
+        console.log(num, "is not Divisible By 5");
     }
 }
 // divisibleByFive(33);
@@ -147,11 +147,11 @@ function divisibleByFive(num){
 
 //  Q8 Divisible by 3 and 5
 
-function diviByThrAndFive(num1){
-    if(num1%5==0 && num1%3==0){
-        console.log(num1 ,"is Divisible by 3 and 5");
-    } else{
-        console.log(num1 ,"is not Divisible by 3 and 5");
+function diviByThrAndFive(num1) {
+    if (num1 % 5 == 0 && num1 % 3 == 0) {
+        console.log(num1, "is Divisible by 3 and 5");
+    } else {
+        console.log(num1, "is not Divisible by 3 and 5");
     }
 }
 // diviByThrAndFive(15);
@@ -181,11 +181,11 @@ function checkLeapYear(year) {
 
 //  Q10 In Range 10–50
 
-function inRange(range){
-    if(range>=10 && range<=50){
-        console.log(range , "is in The Range");
-    } else{
-        console.log(range , "is not The Range");
+function inRange(range) {
+    if (range >= 10 && range <= 50) {
+        console.log(range, "is in The Range");
+    } else {
+        console.log(range, "is not The Range");
     }
 }
 inRange(33);

@@ -146,14 +146,14 @@ function gCD(num1, num2) {
 
 //30
 
-function lcm(f,s){
+function lcm(f, s) {
 
-let max = Math.max(f, s);
+    let max = Math.max(f, s);
 
-for (let i = max; i <= f * s; i++) {
-    if (i % f == 0 && i % s == 0) {
-        console.log(i);
-        return;
+    for (let i = max; i <= f * s; i++) {
+        if (i % f == 0 && i % s == 0) {
+            console.log(i);
+            return;
+        }
     }
-}
 }

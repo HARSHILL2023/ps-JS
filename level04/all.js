@@ -1,24 +1,24 @@
 //31
 function lengthOfString(string) {
-  console.log(string.length);
+    console.log(string.length);
 }
 //another apporach
-let str="javascript";
-let count=0;
+let str = "javascript";
+let count = 0;
 
-while(str[count]){
-count++;
+while (str[count]) {
+    count++;
 }
 // console.log(count)
 
 //32
 
-function charcterOnnewline(string){
-    var temp=string.split("");
-    let str="";
-    for(var i=0;i<string.length;i++){
-        str=str+ temp[i]+" ";
-        
+function charcterOnnewline(string) {
+    var temp = string.split("");
+    let str = "";
+    for (var i = 0; i < string.length; i++) {
+        str = str + temp[i] + " ";
+
     }
     console.log(str);
 }
@@ -26,23 +26,23 @@ charcterOnnewline("hello")
 
 //33
 
-let strr ="harshil";
-let check="aeiouAEIOU";
-let countt =0;
-for(let i=0;i<strr.length;i++){
-    if(check.includes(str[i])){
+let strr = "harshil";
+let check = "aeiouAEIOU";
+let countt = 0;
+for (let i = 0; i < strr.length; i++) {
+    if (check.includes(str[i])) {
         countt++;
     }
 }
 // console.log(countt);
 
 //another apporach
-function vowelsCount(string){
-    var temp=string.split("");
-    let count=0;
+function vowelsCount(string) {
+    var temp = string.split("");
+    let count = 0;
 
-    for(var i=0;i<string.length;i++){
-        if(temp[i]=="a" || temp[i]=="e"|| temp[i]=="i"||temp[i]=="o"|| temp[i]=="u" ){
+    for (var i = 0; i < string.length; i++) {
+        if (temp[i] == "a" || temp[i] == "e" || temp[i] == "i" || temp[i] == "o" || temp[i] == "u") {
             count++;
         }
     }
@@ -52,35 +52,35 @@ function vowelsCount(string){
 
 //3rd approach
 
-let obj={
-    i:1,
-    a:1,
-    e:1,
-    o:1,
-    u:1,
-    A:1,
-    E:1,
-    I:1,
-    O:1,
-    U:1,
+let obj = {
+    i: 1,
+    a: 1,
+    e: 1,
+    o: 1,
+    u: 1,
+    A: 1,
+    E: 1,
+    I: 1,
+    O: 1,
+    U: 1,
 }
-let cut=0;
-for(let char of strr){
-    if(obj[char]==1){
+let cut = 0;
+for (let char of strr) {
+    if (obj[char] == 1) {
         count++;
     }
 }
 
 //34
-function countConsonants(string){
-    var temp=string.split("");
-    let count=0;
+function countConsonants(string) {
+    var temp = string.split("");
+    let count = 0;
 
-    for(var i=0;i<string.length;i++){
-        if(temp[i]=="a" || temp[i]=="e"|| temp[i]=="i"||temp[i]=="o"|| temp[i]=="u" ){
-            
+    for (var i = 0; i < string.length; i++) {
+        if (temp[i] == "a" || temp[i] == "e" || temp[i] == "i" || temp[i] == "o" || temp[i] == "u") {
+
         }
-        else{
+        else {
             count++;
         }
     }
@@ -88,10 +88,10 @@ function countConsonants(string){
 }
 
 //35
-function upperCase(string){
-    let temp=string.toUpperCase();
+function upperCase(string) {
+    let temp = string.toUpperCase();
     console.log(temp);
-    
+
 }
 
 //another approach 
@@ -109,10 +109,10 @@ function toUpperCase(str) {
 }
 
 //36
-function lowercase(string){
-    let temp=string.toLowerCase();
+function lowercase(string) {
+    let temp = string.toLowerCase();
     console.log(temp);
-    
+
 }
 
 //37
@@ -127,29 +127,29 @@ function reverseString(string) {
 
 //38
 
-function palindrome(string){
-    let temp=string;
+function palindrome(string) {
+    let temp = string;
     let reverse = "";
     for (let i = string.length - 1; i >= 0; i--) {
         reverse += string[i];
     }
-    if(temp==reverse){
+    if (temp == reverse) {
         console.log("yes it's a palindrome");
-        
+
     }
-    else{
+    else {
         console.log("no it's not plaindrome");
-        
+
     }
 }
 
 //39
 
-function CountA(string){
-    var count=0;
-    var temp=string.split("");
-    for(var i=0;i<string.length;i++){
-        if(temp[i]=="a" ||temp[i]=="A"){
+function CountA(string) {
+    var count = 0;
+    var temp = string.split("");
+    for (var i = 0; i < string.length; i++) {
+        if (temp[i] == "a" || temp[i] == "A") {
             count++;
         }
     }
@@ -157,21 +157,21 @@ function CountA(string){
 }
 
 //40
- 
+
 function removeSpaces(string) {
-  let temp = string.split(" ").join("");
-  console.log(temp);
+    let temp = string.split(" ").join("");
+    console.log(temp);
 }
 
 //another approach
 
-function removeSpace(string){
-    let res='';
-    for(let i=0;i<string.length;i++){
-        if(string[i]==" "){
+function removeSpace(string) {
+    let res = '';
+    for (let i = 0; i < string.length; i++) {
+        if (string[i] == " ") {
             continue;
         }
-        res+=string[i];
+        res += string[i];
     }
     console.log(res);
 }

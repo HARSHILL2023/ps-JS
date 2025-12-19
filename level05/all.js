@@ -1,18 +1,18 @@
 //41
 
-function countWords(string){
-    let temp=string;
-    let arr=[];
-    arry=temp.split(' ');
-    console.log(arry.length);
+function countWords(string) {
+  let temp = string;
+  let arr = [];
+  arry = temp.split(' ');
+  console.log(arry.length);
 }
 
 //42
 
-function replace(string){
-    let temp=string;
-    temp=temp.split('a').join("e");
-    console.log(temp);
+function replace(string) {
+  let temp = string;
+  temp = temp.split('a').join("e");
+  console.log(temp);
 
 }
 
@@ -29,14 +29,14 @@ function check(string, char) {
 
 //44
 
-function checkString(string1,string2){
+function checkString(string1, string2) {
 
-    if(string1===string2){
-      console.log("yes it's the same");
-    }
-    else{
-      console.log("not it's not the same");
-    }
+  if (string1 === string2) {
+    console.log("yes it's the same");
+  }
+  else {
+    console.log("not it's not the same");
+  }
 }
 
 //45
@@ -54,11 +54,11 @@ function countDigitsInString(str) {
 
 //46 
 
-function countUppercase(str){
-  let count=0;
-  for(i=0;i<str.length;i++){
-    let temp=str.charCodeAt(i);
-    if(temp>=65 && temp<=90){
+function countUppercase(str) {
+  let count = 0;
+  for (i = 0; i < str.length; i++) {
+    let temp = str.charCodeAt(i);
+    if (temp >= 65 && temp <= 90) {
       count++;
     }
   }
@@ -68,11 +68,11 @@ function countUppercase(str){
 
 //47
 
-function countLowercase(str){
-  let count=0;
-  for(i=0;i<str.length;i++){
-    let temp=str.charCodeAt(i);
-    if(temp>=97 && temp<=122){
+function countLowercase(str) {
+  let count = 0;
+  for (i = 0; i < str.length; i++) {
+    let temp = str.charCodeAt(i);
+    if (temp >= 97 && temp <= 122) {
       count++;
     }
   }
@@ -84,18 +84,18 @@ function countLowercase(str){
 
 
 //48
-function removeVowels(string){
-  var neww =string.replace(/[aeiouAEIOU]/g,"");
+function removeVowels(string) {
+  var neww = string.replace(/[aeiouAEIOU]/g, "");
   console.log(neww);
 }
 // function removeVowels(str) {
 //     const vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
 //     let result = '';
-    
+
 //     for (let i = 0; i < str.length; i++) {
 //         let char = str[i];
 //         let ascii = char.charCodeAt(0);
-        
+
 //         if (ascii >= 65 && ascii <= 90) {
 //             if (ascii !== 65 && ascii !== 69 && ascii !== 73 && ascii !== 79 && ascii !== 85) {
 //                 result += char;
@@ -115,25 +115,25 @@ function removeVowels(string){
 
 //49
 
-function removeNumber(string){
-  var neww=string.replace(/[1234567890]/g,"");
-  console.log(neww);  
+function removeNumber(string) {
+  var neww = string.replace(/[1234567890]/g, "");
+  console.log(neww);
 }
 
 //50
 
 function changeType(str) {
   let result = '';
-  for (let i = 0; i < str.length; i++) {   
-    let temp = str.charCodeAt(i);         
+  for (let i = 0; i < str.length; i++) {
+    let temp = str.charCodeAt(i);
     if (temp >= 97 && temp <= 122) {
-      
-      result += String.fromCharCode(temp - 32);  
+
+      result += String.fromCharCode(temp - 32);
     } else if (temp >= 65 && temp <= 90) {
-     
+
       result += String.fromCharCode(temp + 32);
     } else {
-   
+
       result += str[i];
     }
   }

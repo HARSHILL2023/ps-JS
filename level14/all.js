@@ -112,7 +112,7 @@ function indexofmaximum(arry) {
 
 //169
 
-function minumindex(arry){
+function minumindex(arry) {
     let max = arry[1];
 
     for (let i = 0; i < arry.length; i++) {
@@ -140,13 +140,13 @@ function duplicate(arry) {
 
 //171
 
-function uniqueElements(arr){
+function uniqueElements(arr) {
     let arrNew = [];
     let obj = {};
-    for(let i = 0 ; i<arr.length ; i++){
-        if(obj[arr[i]]){
+    for (let i = 0; i < arr.length; i++) {
+        if (obj[arr[i]]) {
             continue;
-        }else {
+        } else {
             obj[arr[i]] = 1;
             arrNew.push(arr[i]);
         }
@@ -156,14 +156,14 @@ function uniqueElements(arr){
 
 //172
 
-function increasigarray(arry){
-    let count=0;
-    for(let i=0;i<arry.length;i++){
-        if(arry[i]<arry[i+1]){
+function increasigarray(arry) {
+    let count = 0;
+    for (let i = 0; i < arry.length; i++) {
+        if (arry[i] < arry[i + 1]) {
             count++;
         }
     }
-    return count==arry.length-1;
+    return count == arry.length - 1;
 }
 
 //173
@@ -172,43 +172,43 @@ function increasigarray(arry){
 
 //174
 
-function maximumdiffereence(arry){
-    let max=arry[0];
-    let min=arry[0];
+function maximumdiffereence(arry) {
+    let max = arry[0];
+    let min = arry[0];
 
-    for(let i=0;i<arry.length;i++){
-        if(arry[i]>max){
-            max=arry[i]
+    for (let i = 0; i < arry.length; i++) {
+        if (arry[i] > max) {
+            max = arry[i]
         }
-        if(arry[i]<min){
-            min=arry[i];
+        if (arry[i] < min) {
+            min = arry[i];
         }
     }
-    let diff=max-min;
+    let diff = max - min;
     console.log(diff);
-    
+
 }
 
 //175
 
-function evenindices(arry){
-    let even=[];
-    for(let i=0;i<arry.length;i++){
-        if(i%2==0){
+function evenindices(arry) {
+    let even = [];
+    for (let i = 0; i < arry.length; i++) {
+        if (i % 2 == 0) {
             even.push(arry[i]);
         }
 
     }
     console.log(even);
-    
+
 }
 
 //176
 
-function oddindeces(arry){
-      let odd=[];
-    for(let i=0;i<arry.length;i++){
-        if(i%2!=0){
+function oddindeces(arry) {
+    let odd = [];
+    for (let i = 0; i < arry.length; i++) {
+        if (i % 2 != 0) {
             odd.push(arry[i]);
         }
 
@@ -217,34 +217,34 @@ function oddindeces(arry){
 }
 //177
 
-function stringabove3(arry){
-    let count=0;
-    for(let i=0;i<arry.length;i++){
-        if(arry[i].length>3){
+function stringabove3(arry) {
+    let count = 0;
+    for (let i = 0; i < arry.length; i++) {
+        if (arry[i].length > 3) {
             count++;
         }
     }
     console.log(count);
-} 
+}
 
 
 //178
 
-function firstindex(arry){
-    let neww=[]
-    for(let i=0;i<arry.length;i++){
+function firstindex(arry) {
+    let neww = []
+    for (let i = 0; i < arry.length; i++) {
         neww.push(arry[i][0])
     }
     console.log(neww);
-    
+
 }
 
 //179
 
-function removespaces(arry){
-    let neww=[];
-    for(let i=0;i<arry.length;i++){
-        if(arry[i]!=" "){
+function removespaces(arry) {
+    let neww = [];
+    for (let i = 0; i < arry.length; i++) {
+        if (arry[i] != " ") {
             neww.push(arry[i]);
         }
     }
@@ -253,11 +253,11 @@ function removespaces(arry){
 
 //180
 
-function sumofeven(arry){
-    let sum=0;
-    for(let i=0;i<arry.length;i++){
-        if(arry[i]%2==0){
-            sum+=arry[i]
+function sumofeven(arry) {
+    let sum = 0;
+    for (let i = 0; i < arry.length; i++) {
+        if (arry[i] % 2 == 0) {
+            sum += arry[i]
         }
     }
     console.log(sum);
