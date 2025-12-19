@@ -17,3 +17,9 @@ function swapElements(arr, i, j) {
     arr[i] = arr[j];
     arr[j] = temp;
 }
+
+//183
+
+function rotatearry(arry,k){
+    
+}
