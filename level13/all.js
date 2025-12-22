@@ -221,3 +221,17 @@ function pangram(str) {
     return ascii>=123;
 
 }
+
+//another method
+
+// let checkStr="qwertyuiopasdfghjklzxcvbnm";
+// str=str.toLowerCase();
+// for(let i=0;i<checkStr.length; i++){
+// if(!(str.includes(checkStr[i]))){
+// console.log(false);
+// return;
+
+// }
+
+// console.log(true);
+// }
