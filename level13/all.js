@@ -204,3 +204,20 @@ function anagram(str1, str2) {
 
 }
 
+//160
+
+function pangram(str) {
+    let arr = str.toLowerCase().split('').sort();
+    let ascii=97;
+    for(i=0;i<arr.length;i++){
+        let check =arr[i].charCodeAt();
+
+        if(check==ascii){
+            ascii++
+        }
+
+        
+    }
+    return ascii>=123;
+
+}
