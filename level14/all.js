@@ -167,8 +167,23 @@ function increasigarray(arry) {
 }
 
 //173
-
-
+function allnegativefirts(arry){
+    let converted=[]
+     for(let j=0;j<arry.length;j++){
+        if(arry[j]<=0){
+            converted.push(arry[j])
+        }
+    }
+    for(let i=0;i<arry.length;i++){
+        if(arry[i]>0){
+            converted.push(arry[i]);
+        }
+    }
+   
+    console.log(converted);
+    
+}
+allnegativefirts([1,2,3,4,-12,-12,-17])
 
 //174
 
