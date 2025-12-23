@@ -137,7 +137,21 @@ function duplicate(arry) {
     return false;
 }
 
+//another method 
 
+// let arry=[1,2,24,5];
+// let obj={}
+// for(let i=0;i<arry.length;i++){
+//     if(obj[arry[i]]){
+//         console.log(true);
+//         return;
+//     }
+//     else{
+//         obj[arry[i]]=1;
+//     }
+    
+// }
+// console.log(false);
 //171
 
 function uniqueElements(arr) {
@@ -183,7 +197,6 @@ function allnegativefirts(arry) {
     console.log(converted);
 
 }
-allnegativefirts([1, 2, 3, 4, -12, -12, -17])
 
 //174
 
