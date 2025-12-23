@@ -169,11 +169,11 @@ function uniqueElements(arr) {
     return arrNew;
 }
 
-//172
+//172   
 
 function increasigarray(arry) {
     let count = 0;
-    for (let i = 0; i < arry.length; i++) {
+    for (let i = 0; i < arry.length-1; i++) {
         if (arry[i] < arry[i + 1]) {
             count++;
         }
