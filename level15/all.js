@@ -21,5 +21,21 @@ function swapElements(arr, i, j) {
 //183
 
 function rotatearry(arry, k) {
-
+    for (let i = 1; i <= k; i++) {
+        let arr2 = arr.pop();
+        arr.unshift(arr2);
+    }
+    console.log(arr);
 }
+
+//184
+function rotatearryy(arry, k) {
+    for (let i = 1; i <= k; i++) {
+        let arr2 = arr.shift();
+        arr.push(arr2);
+    }
+    console.log(arr);
+}
+
+
+
