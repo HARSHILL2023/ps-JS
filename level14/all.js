@@ -326,3 +326,15 @@ function sumofeven(arry) {
     }
     console.log(sum);
 }
+
+//another method
+
+let res=arr.reduce((sum,num=>{
+    if(num%2==0){
+        return sum+num;
+    }
+    else{
+        return sum;
+    }
+}
+,0))
