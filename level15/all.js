@@ -34,8 +34,7 @@ function rotatearryy(arry, k) {
         let arr2 = arr.shift();
         arr.push(arr2);
     }
-    console.log(arr);
+    console.log(arry);
 }
-
 
 
