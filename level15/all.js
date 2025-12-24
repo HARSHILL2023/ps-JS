@@ -37,7 +37,9 @@ function swaap(arr,i,j){
 
     console.log(arr);
 }
-swaap([2,1,3],1,0)
+//another way
+[arr[i],arr[j]]=[arr[j],arr[i]];
+
 //183
 
 function rotatearry(arry, k) {
