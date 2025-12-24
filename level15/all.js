@@ -10,15 +10,16 @@ function sumofodd(arry) {
     console.log(sum);
 }
 //another method
-let res=arr.reduce((sum,num=>{
-    if(num%2==0){
-        return sum+num;
-    }
-    else{
-        return sum;
-    }
-}
-,0))
+// let res=arr.reduce((sum,num=>{
+//     if(num%2==0){
+//         return sum+num;
+//     }
+//     else{
+//         return sum;
+//     }
+// }
+// ,0))
+
 //182
 
 function swapElements(arr, i, j) {
@@ -27,6 +28,16 @@ function swapElements(arr, i, j) {
     arr[j] = temp;
 }
 
+//another method
+
+function swaap(arr,i,j){
+    arr[i]=arr[i]+arr[j];
+    arr[j]=arr[i]-arr[j];
+    arr[i]=arr[i]-arr[j];
+
+    console.log(arr);
+}
+swaap([2,1,3],1,0)
 //183
 
 function rotatearry(arry, k) {
@@ -45,5 +56,3 @@ function rotatearryy(arry, k) {
     }
     console.log(arry);
 }
-
-
