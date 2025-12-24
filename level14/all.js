@@ -288,11 +288,31 @@ function firstindex(arry) {
 function removespaces(arry) {
     let neww = [];
     for (let i = 0; i < arry.length; i++) {
-        if (arry[i] != " ") {
+        if (arry[i] != "") {
             neww.push(arry[i]);
         }
     }
     console.log(neww);
+}
+//another method
+function removespac(arry){
+    let neww=[]
+        neww=arry.filter(arry => arry.length>0)
+    console.log(neww);
+    
+}
+removespac(["a","","b",""]);
+
+//another method
+
+function check(arry){
+    for(let i=0;i<arry.length;i++){
+        if(arry[i]===""){
+            arry.splice(i,1);
+            i--;
+        }
+    }
+    console.log(arry);
 }
 
 //180
