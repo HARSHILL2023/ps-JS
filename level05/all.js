@@ -1,10 +1,13 @@
 //41
 
-function countWords(string) {
-  let temp = string;
-  let arr = [];
-  arry = temp.split(' ');
-  console.log(arry.length);
+function countWords(text) {
+  let count = 0;
+  for (let char of text) {
+    if (char === ' ' && count > 0) {
+      count++;
+    }
+  }
+  return count + 1;
 }
 
 //42
@@ -14,6 +17,21 @@ function replace(string) {
   temp = temp.split('a').join("e");
   console.log(temp);
 
+}
+
+//another method
+
+function replace(string){
+  let res="";
+  for(let i=0;i<str.length;i++){
+    if(str[i]=='a'){
+      res+="e";
+    }
+    else{
+      res+=str[i];
+    }
+  }
+  console.log(res);
 }
 
 //43
