@@ -55,7 +55,6 @@ function checks(str,char){
       count++;
       break;
     }
-   
   }
    if(count==0){
       console.log("no not present")
@@ -125,7 +124,7 @@ function removeVowels(string) {
   console.log(neww);
 }
 // function removeVowels(str) {
-//     const vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
+//     
 //     let result = '';
 
 //     for (let i = 0; i < str.length; i++) {
