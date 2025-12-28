@@ -119,19 +119,19 @@ function printprimeNumber(num) {
 
 //28
 
-function fibonacci(num) {
-    var a = 0;
-    var b = 1;
-    console.log(a);
+function fibbonacci(num) {
+    let a=0;
+    let b=1;
+    console.log(a)
     console.log(b);
-    for (var i = 1; i <= num; i++) {
-        let c = a + b;
-        console.log(c);
-        a = b;
-        b = c;
-    }
-
-};
+        for(let i=3;i<=num;i++){
+        let c=a+b;
+            console.log(c);
+            a=b;
+            b=c;
+        }
+    
+}
 
 //29
 function gCD(num1, num2) {
