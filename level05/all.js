@@ -94,14 +94,14 @@ function removeVowels(string) {
 
 //     for (let i = 0; i < str.length; i++) {
 //         let char = str[i];
-//         let ascii = char.charCodeAt(0);
+//         let ascii = char.charCodeAt(char);
 
 //         if (ascii >= 65 && ascii <= 90) {
 //             if (ascii !== 65 && ascii !== 69 && ascii !== 73 && ascii !== 79 && ascii !== 85) {
 //                 result += char;
 //             }
-//         } else if (ascii >= 97 && ascii <= 122) { 
-//             if (ascii !== 97 && ascii !== 101 && ascii !== 105 && ascii !== 111 && ascii !== 117) {
+//         } else if (ascii   >= 97 && ascii <= 122) { 
+//             if (ascii !==   97 && ascii !== 101 && ascii !== 105 && ascii !== 111 && ascii !== 117) {
 //                 result += char;
 //             }
 //         } else {
@@ -125,7 +125,7 @@ function removeNumber(string) {
 function changeType(str) {
   let result = '';
   for (let i = 0; i < str.length; i++) {
-    let temp = str.charCodeAt(i);
+    let temp = str.charCodeAt(i); 
     if (temp >= 97 && temp <= 122) {
 
       result += String.fromCharCode(temp - 32);
