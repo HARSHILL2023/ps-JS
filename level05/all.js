@@ -94,7 +94,7 @@ function removeVowels(string) {
 
 //     for (let i = 0; i < str.length; i++) {
 //         let char = str[i];
-//         let ascii = char.charCodeAt(char);
+//         let ascii = char.charCodeAt();
 
 //         if (ascii >= 65 && ascii <= 90) {
 //             if (ascii !== 65 && ascii !== 69 && ascii !== 73 && ascii !== 79 && ascii !== 85) {
