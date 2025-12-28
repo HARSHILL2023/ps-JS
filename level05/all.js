@@ -45,6 +45,24 @@ function check(string, char) {
   }
 }
 
+//another method
+
+function checks(str,char){
+  let count=0;
+  for(let i=0;i<str.length;i++){
+    if(str[i]==char){
+      console.log("yes present");
+      count++;
+      break;
+    }
+   
+  }
+   if(count==0){
+      console.log("no not present")
+    }
+  
+}
+checks("har","w")
 //44
 
 function checkString(string1, string2) {
