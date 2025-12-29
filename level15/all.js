@@ -107,3 +107,17 @@ function bubble(arr){
 }
 
 //187
+
+function sortArr(arr) {
+    for (let i = 0; i < arr.length - 1; i++) {
+        let m = 0;
+        for (let j = 0; j < arr.length - i; j++) {
+            if (arr[j] > arr[m]) {
+                m = j;
+            }
+        }
+        [arr[arr.length - 1 - i] , arr[m]] = [arr[m], arr[arr.length - 1 - i] ];
+    }
+    console.log(arr);
+}
+
