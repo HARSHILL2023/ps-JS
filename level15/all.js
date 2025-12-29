@@ -30,15 +30,15 @@ function swapElements(arr, i, j) {
 
 //another method
 
-function swaap(arr,i,j){
-    arr[i]=arr[i]+arr[j];
-    arr[j]=arr[i]-arr[j];
-    arr[i]=arr[i]-arr[j];
+function swaap(arr, i, j) {
+    arr[i] = arr[i] + arr[j];
+    arr[j] = arr[i] - arr[j];
+    arr[i] = arr[i] - arr[j];
 
     console.log(arr);
 }
 //another way
-[arr[i],arr[j]]=[arr[j],arr[i]];
+// [arr[i], arr[j]] = [arr[j], arr[i]];
 
 //183
 
@@ -63,61 +63,79 @@ function rotatearryy(arry, k) {
 //Q-185
 
 function arr(arr1, arr2) {
-  let i=0,j=0;
-  let res=[];
+    let i = 0, j = 0;
+    let res = [];
 
-  while(i<arr1.length && j<arr2.length){
-    if(arr1[i]<arr2[j]){
-      res.push(arr1[i]);
-      i++;
+    while (i < arr1.length && j < arr2.length) {
+        if (arr1[i] < arr2[j]) {
+            res.push(arr1[i]);
+            i++;
+        }
+        else {
+            res.push(arr2[j]);
+            j++;
+        }
     }
-    else{
-      res.push(arr2[j]);
-      j++;
+    while (i < arr1.length) {
+        res.push(arr1[i]);
+        i++;
     }
-  }
-  while(i<arr1.length){
-    res.push(arr1[i]);
-    i++;
-  }
-  while(j<arr2.length){
-    res.push(arr2[j]);
-    j++;
-  }
-  console.log(res);
+    while (j < arr2.length) {
+        res.push(arr2[j]);
+        j++;
+    }
+    console.log(res);
 }
 
-arr([1,3,5],[2,4,6]);
+arr([1, 3, 5], [2, 4, 6]);
 
 
 //Q-186
-function bubble(arr){
-  for(let i=0;i<arr.length;i++){
-    for(let j=0;j<arr.length-i;j++){
-      let temp=arr[j];
-      if(arr[j]>arr[j+1]){
-        arr[j] = arr[j+1];
-         arr[j+1] = temp;
-         
-       
-      }
+function bubble(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = 0; j < arr.length - i; j++) {
+            let temp = arr[j];
+            if (arr[j] > arr[j + 1]) {
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+
+
+            }
+        }
     }
-  }
-  console.log(arr);
+    console.log(arr);
 }
 
 //187
 
 function sortArr(arr) {
-    for (let i = 0; i < arr.length ; i++) {
+    for (let i = 0; i < arr.length; i++) {
         let m = 0;
         for (let j = 0; j < arr.length - i; j++) {
             if (arr[j] > arr[m]) {
                 m = j;
             }
         }
-        [arr[arr.length - 1 - i] , arr[m]] = [arr[m], arr[arr.length - 1 - i] ];
+        [arr[arr.length - 1 - i], arr[m]] = [arr[m], arr[arr.length - 1 - i]];
     }
     console.log(arr);
 }
+
+//another method
+function selectionSort(arr) {
+
+    for (let i = 0; i < arr.length; i++) {
+        let max = -Infinity;
+        let index = 0;
+        for (let j = 0; j < arr.length - i; j++) {
+            if (arr[j] > max) {
+                max = arr[j];
+                index = j;
+            }
+        }
+        [arr[index], arr[arr.length - 1 - i]] = [arr[arr.length - 1 - i], arr[index]];
+    }
+    console.log(arr);
+}
+selectionSort([3, 1, 4, 2])
 
