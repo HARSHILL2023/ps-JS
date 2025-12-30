@@ -1,17 +1,24 @@
 //191
+//binary search
 
-function search(arry, k) {
-    count = 0;
-    for (let i = 0; i < arry.length; i++) {
-        if (arry[i] == k) {
-            console.log(i);
-            count++;
+function binarySearch(arr, target) {
+    let low = 0;
+    let high = arr.length - 1;
+    while (low <= high) {
+        let mid = Math.floor((low + high) / 2);
+        if (arr[mid] === target){
+            return mid;
+        }
+        if (arr[mid] < target){
+             low = mid + 1;
+        }
+        else {
+            high = mid - 1;
         }
     }
-    if (count == 0) {
-        console.log("-1");
-    }
+    return -1;
 }
+
 
 //192
 
