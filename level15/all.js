@@ -87,7 +87,7 @@ function arr(arr1, arr2) {
     console.log(res);
 }
 
-arr([1, 3, 5], [2, 4, 6]);
+
 
 
 //Q-186
@@ -137,23 +137,44 @@ function selectionSort(arr) {
     }
     console.log(arr);
 }
-selectionSort([3, 1, 4, 2])
+
 
 //188
 
-function insertionSort(arr){
-for(let i=0;i<arr.length;i++){
-    if(arr[i]>arr[i+1]){
-        for(j=i+1;j>=0;j--){
-            if(arr[j]>arr[j-1]){
-                [arr[j],arr[j-1]]=[arr[j-1],arr[j]]
-            }
-            else{
-                break;
+function insertionSort(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] > arr[i + 1]) {
+            for (j = i + 1; j >= 0; j--) {
+                if (arr[j] > arr[j - 1]) {
+                    [arr[j], arr[j - 1]] = [arr[j - 1], arr[j]]
+                }
+                else {
+                    break;
+                }
             }
         }
     }
+    console.log(arr);
 }
-console.log(arr);
+
+
+//189 
+
+function bubbleSort(arr) {
+    let n = arr.length;
+    for (let i = 0; i < n; i++) {
+        for (let j = 0; j < n - i; j++) {
+            if (arr[j] > arr[j + 1]) {
+
+                let temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+        }
+    }
+    // return arr;
+    console.log(arr)
+    console.log(arr[0])
 }
-insertionSort([7,10,12,12])
+
+bubbleSort([9, 10, 73, 29])
