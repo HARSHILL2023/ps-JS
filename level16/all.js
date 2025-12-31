@@ -44,7 +44,7 @@ function countOccurrences(arr, target) {
 
             if (arr[mid] === target) {
                 index = mid;
-                right = mid - 1; // move left
+                right = mid - 1; 
             } else if (arr[mid] < target) {
                 left = mid + 1;
             } else {
@@ -63,7 +63,7 @@ function countOccurrences(arr, target) {
 
             if (arr[mid] === target) {
                 index = mid;
-                left = mid + 1; // move right
+                left = mid + 1; 
             } else if (arr[mid] < target) {
                 left = mid + 1;
             } else {
@@ -74,10 +74,9 @@ function countOccurrences(arr, target) {
     }
 
     let first = findFirst();
-    if (first === -1) return 0;
-
     let last = findLast();
-    return last - first + 1;
+    console.log(Math.floor(first+last)-1)
+    
 }
 
 
