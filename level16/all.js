@@ -38,10 +38,8 @@ function countOccurrences(arr, target) {
     function findFirst() {
         let left = 0, right = arr.length - 1;
         let index = -1;
-
         while (left <= right) {
             let mid = Math.floor((left + right) / 2);
-
             if (arr[mid] === target) {
                 index = mid;
                 right = mid - 1; 
@@ -57,10 +55,8 @@ function countOccurrences(arr, target) {
     function findLast() {
         let left = 0, right = arr.length - 1;
         let index = -1;
-
         while (left <= right) {
             let mid = Math.floor((left + right) / 2);
-
             if (arr[mid] === target) {
                 index = mid;
                 left = mid + 1; 
@@ -75,9 +71,10 @@ function countOccurrences(arr, target) {
 
     let first = findFirst();
     let last = findLast();
-    console.log(Math.floor(first+last)-1)
-    
+    if (first === -1 || last === -1) return 0;
+    return last - first + 1;  // Correct count
 }
+
 
 
 //193
