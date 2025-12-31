@@ -32,6 +32,55 @@ function countoccurence(arry, k) {
     console.log(count);
 }
 
+//another method (binary search)
+
+function countOccurrences(arr, target) {
+    function findFirst() {
+        let left = 0, right = arr.length - 1;
+        let index = -1;
+
+        while (left <= right) {
+            let mid = Math.floor((left + right) / 2);
+
+            if (arr[mid] === target) {
+                index = mid;
+                right = mid - 1; // move left
+            } else if (arr[mid] < target) {
+                left = mid + 1;
+            } else {
+                right = mid - 1;
+            }
+        }
+        return index;
+    }
+
+    function findLast() {
+        let left = 0, right = arr.length - 1;
+        let index = -1;
+
+        while (left <= right) {
+            let mid = Math.floor((left + right) / 2);
+
+            if (arr[mid] === target) {
+                index = mid;
+                left = mid + 1; // move right
+            } else if (arr[mid] < target) {
+                left = mid + 1;
+            } else {
+                right = mid - 1;
+            }
+        }
+        return index;
+    }
+
+    let first = findFirst();
+    if (first === -1) return 0;
+
+    let last = findLast();
+    return last - first + 1;
+}
+
+
 //193
 
 function sum(arry, k) {
