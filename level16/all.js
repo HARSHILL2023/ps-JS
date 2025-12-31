@@ -83,13 +83,14 @@ function sum(arry, k) {
 
     for (let i = 0; i < arry.length; i++) {
 
-        for (let j = 0; j < arry.length; j++) {
+        for (let j = i+1; j < arry.length; j++) {
             if (arry[i] + arry[j] == k) {
 
                 return true;
             }
         }
     }
+    return false;
 
 }
 
