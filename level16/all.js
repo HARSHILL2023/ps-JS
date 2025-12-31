@@ -6,11 +6,11 @@ function binarySearch(arr, target) {
     let high = arr.length - 1;
     while (low <= high) {
         let mid = Math.floor((low + high) / 2);
-        if (arr[mid] === target){
+        if (arr[mid] === target) {
             return mid;
         }
-        if (arr[mid] < target){
-             low = mid + 1;
+        if (arr[mid] < target) {
+            low = mid + 1;
         }
         else {
             high = mid - 1;
@@ -42,7 +42,7 @@ function countOccurrences(arr, target) {
             let mid = Math.floor((left + right) / 2);
             if (arr[mid] === target) {
                 index = mid;
-                right = mid - 1; 
+                right = mid - 1;
             } else if (arr[mid] < target) {
                 left = mid + 1;
             } else {
@@ -59,7 +59,7 @@ function countOccurrences(arr, target) {
             let mid = Math.floor((left + right) / 2);
             if (arr[mid] === target) {
                 index = mid;
-                left = mid + 1; 
+                left = mid + 1;
             } else if (arr[mid] < target) {
                 left = mid + 1;
             } else {
@@ -80,16 +80,20 @@ function countOccurrences(arr, target) {
 //193
 
 function sum(arry, k) {
+
     for (let i = 0; i < arry.length; i++) {
+
         for (let j = 0; j < arry.length; j++) {
             if (arry[i] + arry[j] == k) {
-                console.log(arry[i], arry[j]);
-                return;
+
+                return true;
             }
         }
     }
+
 }
 
+console.log(sum([1, 2, 3, 4, 5, 6, 7, 8, 1], 4));
 //194
 
 function triplet(arr, y) {
