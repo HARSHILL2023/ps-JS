@@ -83,7 +83,7 @@ function sum(arry, k) {
 
     for (let i = 0; i < arry.length; i++) {
 
-        for (let j = i+1; j < arry.length; j++) {
+        for (let j = i + 1; j < arry.length; j++) {
             if (arry[i] + arry[j] == k) {
 
                 return true;
@@ -94,7 +94,7 @@ function sum(arry, k) {
 
 }
 
-console.log(sum([1, 2, 3, 4, 5, 6, 7, 8, 1], 4));
+// console.log(sum([1, 2, 3, 4, 5, 6, 7, 8, 1], 4));
 //194
 
 function triplet(arr, y) {
@@ -109,9 +109,43 @@ function triplet(arr, y) {
     }
     return false;
 }
+// console.log(triplet([1,2,3,4,5],12));
+
 
 //195
 
+//optimised method
+
+function maximumsubarray(arry) {
+    let max = -Infinity;
+    let currentsum = 0;
+
+    for (let i = 0; i < arry.length; i++) {
+        currentsum += arry[i];
+        max = Math.max(max, currentsum)
+    }
+    if (currentsum < 0) {
+        currentsum = 0;
+    }
+    console.log(max);
+}
+
+
+function maximun(arr) {
+    let max = 0;
+    for (let i = 0; i < arr.length; i++) {
+        let sum = 0;
+        for (let j = i; j < arr.length; j++) {
+            sum += arr[i]
+
+            if (max < sum) {
+                max = sum;
+            }
+        }
+    }
+    console.log(max);
+
+}
 //196
 
 //197
@@ -177,4 +211,4 @@ function RemoveConsecutivearraY(arry) {
     }
     console.log(neww);
 }
-RemoveConsecutivearraY([1, 1, 2, 1, 1, 3, 5, 8, 2])
+// RemoveConsecutivearraY([1, 1, 2, 1, 1, 3, 5, 8, 2])
