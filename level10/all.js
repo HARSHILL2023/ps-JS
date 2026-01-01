@@ -83,7 +83,7 @@ function price(obj) {
         total += obj[value];
     }
     console.log(total);
-}
+}   
 
 //96
 
