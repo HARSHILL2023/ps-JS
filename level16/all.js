@@ -148,6 +148,23 @@ function maximun(arr) {
 }
 //196
 
+//errored
+
+// function non(arr,k){
+//     let max=-Infinity;
+//     for(let i=0;i<arr.length;i++){
+//         for(let j=i;j<=i+k;j++){
+//             let sum=0;
+//             sum+=arr[j];
+//             }
+//              if(max<sum){
+//                 max=sum;
+//         }
+//     }
+//     console.log(max)
+// }
+// non( [1, 2, 3, 4, 5],2)
+
 //197
 
 function firstNonRepeatingChar(str) {
