@@ -2,11 +2,12 @@
 function square(n) {
     let str = "";
     for (let i = 1; i <= n; i++) {
+        str="";
         for (let j = 1; j <= n; j++) {
             str = str + "* ";
         }
         console.log(str);
-        str = "";
+        
     }
 }
 
