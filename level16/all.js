@@ -202,6 +202,7 @@ function firstRepeatingChar(str) {
     }
     return null;
 }
+console.log(firstRepeatingChar('swiss'))
 
 //199
 function RemoveConsecutive(str) {
