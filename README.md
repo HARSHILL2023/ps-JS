@@ -1,1 +1,1 @@
-# ps-js
+all problem solving question sucessfully created 
