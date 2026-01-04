@@ -79,6 +79,19 @@ function divisibleby2and5(num) {
   console.log(count);
 }
 
+//129
+
+function isPerfectEasy(n) {
+  let sum = 0;
+  for(let i = 1; i < n; i++) {
+    if(n % i === 0) {
+      sum += i;
+    }
+  }
+  return sum === n;
+}
+
+
 //130
 function coprime(n1, n2) {
   let range = Math.min(n1, n2);
