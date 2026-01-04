@@ -72,7 +72,7 @@ function divisibleby2or3(num) {
 function divisibleby2and5(num) {
   let count = 0;
   for (let i = 0; i <= num; i++) {
-    if (i % 2 == 0 && i % 5 == 0) {
+    if (i % 2 == 0 && i % 5 == 0) {``
       count++;
     }
   }
@@ -110,7 +110,7 @@ coprime(8, 15);
 
 function largestNumber(n) {
   let big = 0;
-
+ 
   while (n > 0) {
     let digit = n % 10;
     if (digit > big) {
