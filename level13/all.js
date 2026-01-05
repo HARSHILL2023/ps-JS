@@ -8,7 +8,6 @@ function middle(str) {
     else {
         let temp2 = Math.floor((check / 2))
         console.log(temp2);
-
         console.log(str[temp2])
     }
 }
