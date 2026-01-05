@@ -36,10 +36,11 @@ function countspaces(str) {
 //145
 
 function removespaces(str) {
-    let temp = str.split(' ').join('');
+    let temp = str.trim()
     console.log(temp);
 
 }
+
 
 //146
 
