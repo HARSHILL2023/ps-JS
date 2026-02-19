@@ -67,45 +67,7 @@ function ageGroup(age) {
 // ageGroup(18);
 
 
-//  Q6 Grade Calculator
 
-function gradeCal(grade) {
-    if (grade >= 90 && grade < 101) {
-        console.log(grade, "-> Grade A");
-    } else if (grade > 80 && grade < 90) {
-        console.log(grade, "-> Grade B");
-    } else if (grade > 70 && grade < 80) {
-        console.log(grade, "-> Grade C");
-    } else if (grade > 60 && grade < 70) {
-        console.log(grade, "-> Grade D");
-    } else {
-        console.log("Fail");
-    }
-}
-// gradeCal(99);
-
-//  baki Swich Case
-
-
-// function gradeCalSwichCase(ggrade){
-//     swich(ggrade){
-//         case(ggrade>=90 && ggrade<101):
-//         console.log(ggrade , "-> Grade A");
-
-//         case(ggrade>80 && ggrade<90):
-//         console.log(ggrade , "-> Grade B");   
-
-//         case(ggrade>70 && ggrade<80):
-//         console.log(ggrade , "-> Grade C");
-
-//         case(ggrade>60 && ggrade<70):
-//         console.log(ggrade , "-> Grade D");
-
-//         case(ggrade<60):
-//         console.log(ggrade ,"-> is Fail");
-//     }
-// }
-// gradeCalSwichCase(99);
 
 //  vineet
 
